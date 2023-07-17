@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="stoapantaS7.vistas.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana de Login" HorizontalOptions="Center" FontSize="24"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Contraseña" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese el Usuario" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtContraseña" Placeholder="Ingrese la contraseña" Grid.Row="1" Grid.Column="1"/>
+
+                <Button x:Name="btnIniciar" Text="Iniciar Secion" Clicked="btnIniciar_Clicked" Grid.Row="2" Grid.Column="0"/>
+                <Button x:Name="btnRegistro" Text="Registro" Clicked="btnRegistro_Clicked" Grid.Row="2" Grid.Column="1"/>
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
